@@ -10,9 +10,12 @@ app.get('/github', async( req, res) => {
         const { data } = await axios.get(url)
 
         return data
+        
     }
     console.log(data)
     const data = await Auth()
+
+    
 
     return res.status(200).send(data)
 })
