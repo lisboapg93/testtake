@@ -13,10 +13,10 @@ app.get(`/github`, async(req, res) => {
     
     const { data } = await axios.get(url)
     
-    return dataFilter.map(item => ({
-      name: item.full_name,
-      description: item.description,
-      image: item.owner.avatar_url
+    dataFilter.map(repos => ({
+      name: repos.full_name,
+      description: repos.description,
+      image: repos.owner.avatar_url
   }));
 
 
