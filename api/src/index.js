@@ -13,13 +13,6 @@ app.get(`/github`, async(req, res) => {
     
     const { data } = await axios.get(url)
     
-    dataFilter.map(repos => ({
-      name: repos.full_name,
-      description: repos.description,
-      image: repos.owner.avatar_url
-  }));
-
-
     let dataFilter = []
     let newData = {}
     let createdData
@@ -42,6 +35,12 @@ app.get(`/github`, async(req, res) => {
       }
 
     })
+
+    dataFilter.map(reposito => ({
+      name: reposito.full_name,
+      description: reposito.description,
+      image: reposito.owner.avatar_url
+  }));
       
     function ordenateDate(firstDate, nextDate) {
       if(new Date(firstDate.created_at).getTime() > new Date(nextDate.created_at).getTime()) {
