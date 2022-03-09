@@ -1,7 +1,7 @@
 {
   "name": "JavaScript",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./api/src/index.js",
   "license": "MIT",
   "type": "module",
   "scripts": {
