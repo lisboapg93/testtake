@@ -39,7 +39,7 @@ app.get(`/github`, async(req, res) => {
     dataFilter.map(reposito => ({
       name: reposito.full_name,
       description: reposito.description,
-      image: reposito.owner.avatar_url
+      image: reposito.owner?.avatar_url
   }));
       
     function ordenateDate(firstDate, nextDate) {
