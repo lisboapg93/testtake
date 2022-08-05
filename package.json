@@ -1,5 +1,5 @@
 {
-  "name": "JavaScript",
+  "name": "javascript",
   "version": "1.0.0",
   "main": "./api/src/index.js",
   "license": "MIT",
@@ -13,5 +13,17 @@
     "express": "^4.17.3",
     "moment": "^2.29.1",
     "nodemon": "^2.0.15"
-  }
+  },
+  "description": "Desafio",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lisboapg93/testtake.git"
+  },
+  "keywords": [],
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/lisboapg93/testtake/issues"
+  },
+  "homepage": "https://github.com/lisboapg93/testtake#readme"
 }
