@@ -7,7 +7,7 @@ Criação de uma API para comunicação com API do github para trazer 5 repos ma
 em C#
 
 # Etapas
-- Criação de API RESTFUL em JavaScript.✔️
+- Criação de API REST em JavaScript.✔️
 - API REST com get.✔️
 - API REST hopedado no heroku.✔️
  
